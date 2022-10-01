@@ -1,4 +1,4 @@
-FROM python:3.11.0b3
+FROM python:3.11-rc
 
 RUN pip3 install requests
 
