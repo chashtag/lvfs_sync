@@ -14,7 +14,7 @@ class Connection(object):
         self.tp = ThreadPoolExecutor(max_workers=10)
         self.base = 'https://cdn.fwupd.org/downloads'
         self.manifest = '/'.join((self.base,'PULP_MANIFEST'))
-        self.dl_dir = '/mirror'
+        self.dl_dir = './mirror'
         self.workers = []
 
     def get_listing(self):
