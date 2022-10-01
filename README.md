@@ -13,8 +13,8 @@ docker run -ti --rm -v $PWD/mirror:/mirror:z lvfs_sync
 ## To host the mirror
 
 ```sh
-docker buildx build . -t nginx
-docker run -ti --rm -v $PWD/mirror:/mirror:z nginx
+docker buildx build . -t lvfs_nginx
+docker run -ti --rm -v $PWD/mirror:/mirror:z lvfs_nginx
 ```
 ---
 
